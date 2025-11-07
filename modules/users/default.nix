@@ -5,8 +5,7 @@
     users = {
       n0viewers = {
         isNormalUser = true;
-        home = "/home/codebam";
-        description = "Sean Behan";
+        home = "/home/n0viewers";
         extraGroups = [
           "wheel"
           "networkmanager"
