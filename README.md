@@ -9,6 +9,9 @@
 - default editor set to nano
 - fish shell with starship
 - foot terminal
+- stylix system wide styling
+- lix instead of nix
+- run0 instead of sudo, with a sudo wrapper
 
 ## To install:
 
