@@ -1,6 +1,11 @@
 _:
 {
   services = {
+    flatpak = {
+      enable = true;
+      # this doesn't preconfigure, so you need to bootstrap your user repository using the command:
+      # flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+    };
     scx = {
       enable = true;
     };
