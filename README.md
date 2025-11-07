@@ -1,6 +1,7 @@
 ## Features:
 
 - nixos-unstable branch
+- kde plasma
 - zram
 - mounts and boot configuration using disko
 - scx lavd cpu scheduler
