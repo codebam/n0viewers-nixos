@@ -86,7 +86,7 @@
                 useGlobalPkgs = true;
                 useUserPackages = true;
                 extraSpecialArgs = { inherit inputs; };
-                users.codebam = {
+                users.n0viewers = {
                   imports = [ ./home ];
                 };
                 sharedModules = [
@@ -116,7 +116,7 @@
           extraModules = [
             ./laptop-specific/configuration
             {
-              home-manager.users.codebam.imports = [
+              home-manager.users.n0viewers.imports = [
                 ./laptop-specific/home.nix
               ];
             }

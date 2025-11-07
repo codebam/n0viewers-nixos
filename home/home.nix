@@ -1,4 +1,4 @@
-{ pkgs }:
+{ pkgs, ... }:
 
 {
   home = {
@@ -26,12 +26,6 @@
       EDITOR = "nano";
       NIXOS_OZONE_WL = "1";
       OBS_VKCAPTURE = "1";
-      # WLR_RENDERER = "vulkan";
-      MANGOHUD_CONFIGFILE = "/home/codebam/.config/MangoHud/MangoHud.conf";
-      PROTON_ENABLE_WAYLAND = "1";
-      PROTON_ENABLE_HDR = "1";
-      PROTON_USE_NTSYNC = "1";
-      SEARXNG_API_URL = "http://localhost:8081";
     };
 
     packages = with pkgs; [
