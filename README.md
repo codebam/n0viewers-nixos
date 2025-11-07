@@ -1,4 +1,15 @@
-# To install:
+## Features:
+
+- nixos-unstable branch
+- zram
+- mounts and boot configuration using disko
+- scx lavd cpu scheduler
+- steam, heroic, and other programs
+- default editor set to nano
+- fish shell with starship
+- foot terminal
+
+## To install:
 
 Download a nixos minimal iso.
 
