@@ -1,0 +1,7 @@
+_:
+
+{
+  xdg = {
+    enable = true;
+  };
+}

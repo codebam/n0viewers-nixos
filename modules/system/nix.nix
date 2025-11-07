@@ -1,0 +1,41 @@
+{ config, ... }:
+{
+  nix = {
+    settings = {
+      experimental-features = [
+        "nix-command"
+        "flakes"
+      ];
+      auto-optimise-store = true;
+      trusted-users = [
+        "root"
+        "n0viewers"
+      ];
+      system-features = [
+        "i686-linux"
+        "big-parallel"
+        "kvm"
+      ];
+      max-jobs = "auto";
+      cores = 0;
+      extra-sandbox-paths = [ config.programs.ccache.cacheDir ];
+      builders-use-substitutes = true;
+      substituters = [
+        "https://cache.nixos.org/"
+      ];
+      trusted-public-keys = [
+        "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
+      ];
+    };
+    gc = {
+      automatic = true;
+      dates = "weekly";
+      options = "--delete-older-than 30d";
+    };
+    # Enable automatic optimization of the store
+    optimise = {
+      automatic = true;
+      dates = [ "03:45" ];
+    };
+  };
+}

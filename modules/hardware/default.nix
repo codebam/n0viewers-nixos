@@ -1,0 +1,21 @@
+_:
+{
+  hardware = {
+    bluetooth = {
+      enable = true;
+      powerOnBoot = true;
+      settings = {
+        General = {
+          Enable = "Source,Sink,Media,Socket";
+          Experimental = true;
+        };
+      };
+    };
+    uinput.enable = true;
+    graphics = {
+      enable = true;
+      enable32Bit = true;
+    };
+    enableRedistributableFirmware = true;
+  };
+}
