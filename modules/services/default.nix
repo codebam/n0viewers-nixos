@@ -1,6 +1,11 @@
 _:
 {
   services = {
+    displayManager = {
+      gdm = {
+        enable = true;
+      };
+    };
     flatpak = {
       enable = true;
       # this doesn't preconfigure, so you need to bootstrap your user repository using the command:
