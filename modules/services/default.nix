@@ -2,7 +2,7 @@ _:
 {
   services = {
     displayManager = {
-      gdm = {
+      sddm = {
         enable = true;
       };
     };
