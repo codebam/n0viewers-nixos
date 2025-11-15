@@ -24,6 +24,7 @@
           "libretro-mame2015"
           "vscode"
           "cuda_nvcc"
+          "cuda_cudart"
         ];
     };
     overlays = [

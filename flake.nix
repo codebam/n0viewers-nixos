@@ -99,16 +99,6 @@
 
     in
     {
-      devShells = forAllSystems (pkgs: {
-        default = pkgs.mkShell {
-          buildInputs = with pkgs; [
-            nil
-            nixd
-            nixpkgs-fmt
-          ];
-        };
-      });
-
       nixosConfigurations = {
         n0viewers-nixos = mkNixosSystem {
           system = "x86_64-linux";
