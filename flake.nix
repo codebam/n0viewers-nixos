@@ -105,7 +105,6 @@
             nil
             nixd
             nixpkgs-fmt
-            inputs.helix.packages.${stdenv.hostPlatform.system}.default
           ];
         };
       });
