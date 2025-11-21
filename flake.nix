@@ -55,7 +55,7 @@
                 config = {
                   # You can add common pkgs configurations here, e.g.:
                   # allowUnfree = true;
-                  cudaSupport = true;
+                  # cudaSupport = true;
                   # TODO: remove this if you don't want nvidia cuda support. i.e. in blender, ollama, etc.
                 };
               }
